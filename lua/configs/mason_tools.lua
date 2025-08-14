@@ -2,6 +2,9 @@ local tools = {
   -- LSPs
   "typescript-language-server",
   "eslint-lsp",
+  "html-lsp",
+  "css-lsp",
+  "stylelint-lsp",
   "omnisharp",
   "pyright",
   "solargraph",
@@ -12,6 +15,8 @@ local tools = {
   -- Linters/Formatters
   "prettier",
   "eslint_d",
+  "htmlhint",
+  "stylelint",
   "csharpier",
   "flake8",
   "black",

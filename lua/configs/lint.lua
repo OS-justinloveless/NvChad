@@ -6,6 +6,9 @@ lint.linters_by_ft = {
   javascriptreact = { "eslint_d" },
   typescript = { "eslint_d" },
   typescriptreact = { "eslint_d" },
+  html = { "htmlhint" },
+  css = { "stylelint" },
+  scss = { "stylelint" },
 
   -- python
   python = { "flake8" },

@@ -3,6 +3,8 @@ require("nvchad.configs.lspconfig").defaults()
 local servers = {
   -- web
   "tsserver",
+  "html",
+  "cssls",
   "eslint",
 
   -- c#
@@ -22,6 +24,8 @@ local servers = {
 
   -- go
   "gopls",
+  -- css linting via LSP
+  "stylelint_lsp",
 }
 
 if vim.lsp.enable then
