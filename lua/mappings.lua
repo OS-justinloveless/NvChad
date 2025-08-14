@@ -1,3 +1,9 @@
+-- Load NvChad's default mappings first, then add ours
+local ok, _ = pcall(require, "nvchad.mappings")
+if not ok then
+  -- no-op: fallback if nvchad core isn't available yet
+end
+
 local map = vim.keymap.set
 
 map("n", "<leader>dd", function()

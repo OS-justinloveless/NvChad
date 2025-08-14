@@ -32,6 +32,8 @@ require "options"
 require "autocmds"
 
 vim.schedule(function()
+  -- ensure NvChad has initialized its UI/mappings before loading ours
+  pcall(require, "nvchad")
   require "mappings"
 end)
 
