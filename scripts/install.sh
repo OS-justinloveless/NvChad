@@ -27,25 +27,17 @@ if ! command -v nvim >/dev/null 2>&1; then
   exit 0
 fi
 
-# Headless: install plugins via lazy, then install mason tools
+# Headless: install plugins via lazy
 nvim --headless \
   "+lua require('lazy').sync()" \
   "+qa"
-
-# Install Mason tools (requires the mason-tool-installer plugin)
-# Run twice to ensure mason registry populated on first run
-nvim --headless \
-  "+Lazy! sync" \
-  "+lua require('mason-tool-installer').run_on_start()" \
-  "+MasonToolsInstall" \
-  "+sleep 2" \
-  "+qa" || true
 
 # Final message
 cat <<EOF
 
 Installed custom NvChad config to: ${TARGET_DIR}
 - Open Neovim once (nvim) to finish setup
+- Then run :MasonToolsInstall and wait for all tools to complete (keeps UI open)
 - Optional: run :Mason to verify tools
 - For Gemini set GOOGLE_API_KEY; for Copilot run :Copilot auth
 
