@@ -18,8 +18,7 @@ return {
     sh = { "shfmt" },
     bash = { "shfmt" },
 
-    -- docker
-    dockerfile = { "hadolint" },
+    -- docker (formatting often handled by editors; no default formatter here)
 
     -- go
     go = { "gofmt" },
