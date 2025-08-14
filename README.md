@@ -1,4 +1,4 @@
-<h1 align="center">NvChad</h1>
+<h1 align="center">NvChad (customized)</h1>
 
 <div align="center">
 	<a href="https://nvchad.com/">Home</a>
@@ -27,6 +27,23 @@
 
 ![nvdash](https://github.com/user-attachments/assets/0c7e2c8f-8940-42ea-9c18-7456768d2d05)
 <img src="https://nvchad.com/banner.webp">
+
+### Quick start
+
+- Clone your fork to use as your Neovim config:
+
+```bash
+git clone git@github.com:OS-justinloveless/NvChad.git ~/.config/nvim
+```
+
+- Open Neovim once to auto-install plugins, then run `:Mason` to ensure tools are installed.
+
+### What’s customized
+
+- Theme set to `material-deep-ocean` via `lua/chadrc.lua`.
+- LSPs via `mason.nvim` and `nvim-lspconfig` for TypeScript, C#, Python, Ruby, Bash, Docker, and Go.
+- Linters via `nvim-lint` and formatters via `conform.nvim`.
+- Debugging via `nvim-dap` for TypeScript (node2) and C# (netcoredbg).
 
 <img src="https://nvchad.com/screenshots/onedark.webp">
 <img src="https://nvchad.com/screenshots/rxyhn1.webp">
